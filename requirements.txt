@@ -1,0 +1,31 @@
+# Ship Detection — PC Training Requirements
+# Python >= 3.8 recommended
+
+# Core ML
+torch>=2.0.0
+torchvision>=0.15.0
+
+# YOLOv5 dependencies (also installed via yolov5/requirements.txt)
+ultralytics  # optional: for CLI convenience
+opencv-python>=4.7.0
+Pillow>=9.4.0
+numpy>=1.23.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Data processing
+pandas>=1.5.0
+PyYAML>=6.0
+tqdm>=4.64.0
+lxml>=4.9.0          # XML parsing for VOC annotations
+
+# Kaggle download
+kaggle>=1.5.13
+
+# Visualization / reporting
+tensorboard>=2.12.0
+
+# Export
+onnx>=1.14.0
+onnxruntime>=1.15.0  # CPU inference check before Vitis-AI
