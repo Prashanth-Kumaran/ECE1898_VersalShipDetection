@@ -1,16 +1,17 @@
-# YOLOv5 Ship Detection — Python 3.11 + CUDA 12.1
+# YOLOv5 Ship Detection — Python 3.12 + CUDA 12.7
 # ──────────────────────────────────────────────
-# Install with:
-#   pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
+# DO NOT install via VS Code's "Install from requirements.txt" button.
+# Instead run this in the terminal with the venv activated:
 #
-# If you have a different CUDA version, change cu121 to:
-#   cu118  → CUDA 11.8
-#   cu124  → CUDA 12.4
-#   cpu    → CPU only (no GPU)
+#   pip install -r requirements.txt
+#
+# The --extra-index-url line below tells pip where to find CUDA builds.
 
-# Core deep learning
-torch==2.3.1+cu124
-torchvision==0.18.1+cu124
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+# Core deep learning (CUDA 12.4 builds work with CUDA 12.7 drivers)
+torch==2.5.1+cu124
+torchvision==0.20.1+cu124
 
 # Image processing
 opencv-python==4.10.0.84

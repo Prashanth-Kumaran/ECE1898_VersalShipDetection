@@ -51,9 +51,9 @@ CKPT     = "yolov5_ship_best.pth"
 # 9 k-means anchors tuned for aerial ship imagery (w×h, pixels at IMG_SIZE=640)
 # Replace with output of anchor_kmeans() after first run for best results
 ANCHORS = [
-    [(10, 13),  (16, 30),   (33, 23)],    # P3/8   small
-    [(30, 61),  (62, 45),   (59, 119)],   # P4/16  medium
-    [(116, 90), (156, 198), (373, 326)],  # P5/32  large
+    [(8, 9), (38, 43), (46, 52)],    # P3/8   small
+    [(80, 96), (88, 107), (98, 110)],   # P4/16  medium
+    [(170, 180), (203, 210), (396, 448)],  # P5/32  large
 ]
 STRIDES = [8, 16, 32]
 
